@@ -1,0 +1,8 @@
+<%= include("./partials/header.js", {title: "article"}) %>
+<h1><%= article.title%></h1>
+<p><%=article.author%></p>
+<p><%= article.publishedAt%></p>
+<p><%=article.description%></p>
+<img src="<%=article.urlToImage%>" alt="image">
+<p><%=article.content%></p>
+<%= include("./partials/footer.js")%>
